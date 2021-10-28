@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { FetchImage } from "random-image-unsplash";
 import axios from "axios";
 import "./CarCards.css";
 
 function CarCards({ year, data, searchNames, count, make }) {
   const [vehicleImage, setVehicleImage] = useState([]);
-  const [clientId, setClientId] = useState(
-    "3dWLZXzv94Cd8ah_dwT3TqMB3MtfaW_fqxVvDLlSNng"
-  );
+
+  const clientId = "3dWLZXzv94Cd8ah_dwT3TqMB3MtfaW_fqxVvDLlSNng";
 
   useEffect(() => {
     axios
